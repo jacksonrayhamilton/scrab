@@ -6,9 +6,9 @@
     "type": "git",
     "url": "https://github.com/jacksonrayhamilton/scrab.git"
   },
-  "main": "scrab.js",
+  "main": "./lib/scrab.js",
   "scripts": {
-    "test": "test/test.js"
+    "test": "./test/test.js"
   },
   "author": "Jackson Ray Hamilton",
   "license": "MIT",
