@@ -1,6 +1,6 @@
 # scrab
 
-And random word and sentence generation utility.
+A random word and sentence generation utility.
 
 Usage:
 
