@@ -2,7 +2,7 @@
   "name": "scrab",
   "version": "0.0.1",
   "description": "A random word and sentence generation library.",
-  "main": "scrabble.js",
+  "main": "scrab.js",
   "scripts": {
     "test": "test/test.js"
   },
