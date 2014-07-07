@@ -2,6 +2,7 @@
   "name": "scrab",
   "version": "0.0.1",
   "description": "A random word and sentence generation library.",
+  "repository": "https://github.com/jacksonrayhamilton/scrab.git",
   "main": "scrab.js",
   "scripts": {
     "test": "test/test.js"
