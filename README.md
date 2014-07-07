@@ -14,22 +14,28 @@ var scrab = require('scrab');
 console.log('My favorite word of all time is "' + scrab.getRandomWord() + '".');
 // => My favorite word of all time is "abcoulombs".
 
-// Capitalize the first letter of the word.
+// Capitalize the first letter of random words.
 scrab.getRandomWord({
     properize: true
 });
 // => "Orange"
 
-// Get a random sentence.
+// Get totally random sentences.
 scrab.getRandomSentence();
 // => "Afterpieces nonvital gothicized spermatophyte coelenterate wardens."
 
-// Get a setence with specific criteria.
+// Get sentences with specific criteria.
 scrab.getRandomSentence({
     min: 2,
-    max: 9,
+    max: 3,
     punctuate: false,
     properize: true
 });
 // => "Pitifullest Vaudevillians Hansom"
+
+// Even include random grammar-things.
+scrab.getRandomSentence({
+    separate: true
+});
+// => "Pyrolyzed precipices: humbugged, reinstalls, uralites mortgager; hound achieved."
 ```

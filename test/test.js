@@ -1,6 +1,6 @@
 // These are tests! Really, I swear!
 
-var scrab = require('../scrab.js'),
+var scrab = require('../lib/scrab.js'),
     i;
 
 for (i = 0; i < 3; i++) {
@@ -23,5 +23,11 @@ for (i = 0; i < 3; i++) {
         max: 3,
         punctuate: false,
         properize: true
+    }));
+}
+
+for (i = 0; i < 3; i++) {
+    console.log(scrab.getRandomSentence({
+        separate: true
     }));
 }
