@@ -11,33 +11,33 @@ npm install --save scrab
 ```javascript
 var scrab = require('scrab');
 
-console.log('My favorite word of all time is "' + scrab.getRandomWord() + '".');
+console.log('My favorite word of all time is "' + scrab.word() + '".');
 // => My favorite word of all time is "abcoulombs".
 
-scrab.getRandomWord({
+scrab.word({
     preposition: true
 });
 // => "between"
 // => "from"
 
-scrab.getRandomWord({
+scrab.word({
     conjunction: true
 });
 // => "but"
 // => "nor"
 
 // Capitalize the first letter of random words.
-scrab.getRandomWord({
+scrab.word({
     properize: true
 });
 // => "Orange"
 
 // Get totally random sentences.
-scrab.getRandomSentence();
+scrab.sentence();
 // => "Unambivalently soapsudsy unisonant aduncous allotting axions deliciousness until agitates."
 
 // Get sentences with specific criteria.
-scrab.getRandomSentence({
+scrab.sentence({
     min: 2,
     max: 3,
     punctuate: false,
@@ -46,13 +46,13 @@ scrab.getRandomSentence({
 // => "Pitifullest Vaudevillians Hansom"
 
 // Even include random grammar-things.
-scrab.getRandomSentence({
+scrab.sentence({
     separate: true
 });
 // => "Though while prepurchases, verismos since: earlap; whimsied."
 
 // Or do away with logic completely.
-scrab.getRandomSentence({
+scrab.sentence({
     prepositions: false,
     conjunctions: false
 });
