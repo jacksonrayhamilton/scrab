@@ -1,0 +1,14 @@
+{
+  "name": "scrab",
+  "version": "0.0.1",
+  "description": "A random word and sentence generation library.",
+  "main": "scrabble.js",
+  "scripts": {
+    "test": "test/test.js"
+  },
+  "author": "Jackson Ray Hamilton",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^2.4.1"
+  }
+}

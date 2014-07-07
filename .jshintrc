@@ -1,0 +1,100 @@
+// -*- mode: json; -*-
+
+// This file is supposed to be JSON, but jshint ignores the comments so we might
+// as well use them.
+{
+
+    /*
+     * ENVIRONMENTS
+     */
+
+    // Define globals exposed by Node.js.
+    "node": true,
+
+    /*
+     * ENFORCING OPTIONS
+     */
+
+    // Force all variable names to use either camelCase style or UPPER_CASE with
+    // underscores. This can be turned off on a per-file, or even per-function
+    // basis if some external lib does this.
+    //
+    // /*jshint camelcase: true */
+
+    // var not_camel_case = 1; // Warns
+
+    // function example() {
+    //     /*jshint camelcase: false */
+    //     var not_camel_case = 2; // Does not warn
+    // }
+    //
+    "camelcase": true,
+
+    // Force consistent use of curly braces to denote blocks.
+    "curly": true,
+
+    // Prohibit use of == and != in favor of === and !==.
+    "eqeqeq": true,
+
+    // Force for in loops to filter an object's items with a hasOwnProperty
+    // check.
+    //
+    // for (key in obj) {
+    //     if (obj.hasOwnProperty(key)) {
+    //         // We are sure that obj[key] belongs to the object and was not
+    //         // inherited.
+    //     }
+    // }
+    //
+    "forin" : true,
+
+    // Prohibit overwriting prototypes of native objects such as Array and Date.
+    "freeze": true,
+
+    // Suppress warnings about == null comparisons.
+    "eqnull": true,
+
+    // Force dogballs to be wrapped in parens.
+    //
+    // (function () {
+    //     ...
+    // }());
+    //
+    "immed": true,
+
+    // Enforce tab width of 4 spaces.
+    "indent": 4,
+
+    // Prohibit use of a variable before it is defined.
+    "latedef": true,
+
+    // Require capitalized names for constructor functions.
+    "newcap": true,
+
+    // No arguments.caller or arguments.callee.
+    "noarg": true,
+
+    // Warn about empty blocks of code.
+    "noempty": true,
+
+    // Warn about "non-breaking whitespace" characters.
+    "nonbsp": true,
+
+    // Enforce use of single quotation marks for strings.
+    "quotmark": "single",
+
+    // Prohibit trailing whitespace.
+    "trailing": true,
+
+    // Prohibit use of explicitly undeclared variables.
+    "undef": true,
+
+    // Warn when variables are defined but never used.
+    "unused": true,
+
+    // Enforce placing 'use strict' at the top function scope
+    "strict": true,
+
+    // Warn about trailing whitespace.
+    "trailing": true
+}
