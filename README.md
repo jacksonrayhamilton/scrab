@@ -14,6 +14,18 @@ var scrab = require('scrab');
 console.log('My favorite word of all time is "' + scrab.getRandomWord() + '".');
 // => My favorite word of all time is "abcoulombs".
 
+scrab.getRandomWord({
+    preposition: true
+});
+// => "between"
+// => "from"
+
+scrab.getRandomWord({
+    conjunction: true
+});
+// => "but"
+// => "nor"
+
 // Capitalize the first letter of random words.
 scrab.getRandomWord({
     properize: true
@@ -22,7 +34,7 @@ scrab.getRandomWord({
 
 // Get totally random sentences.
 scrab.getRandomSentence();
-// => "Afterpieces nonvital gothicized spermatophyte coelenterate wardens."
+// => "Unambivalently soapsudsy unisonant aduncous allotting axions deliciousness until agitates."
 
 // Get sentences with specific criteria.
 scrab.getRandomSentence({
@@ -37,5 +49,12 @@ scrab.getRandomSentence({
 scrab.getRandomSentence({
     separate: true
 });
-// => "Pyrolyzed precipices: humbugged, reinstalls, uralites mortgager; hound achieved."
+// => "Though while prepurchases, verismos since: earlap; whimsied."
+
+// Or do away with logic completely.
+scrab.getRandomSentence({
+    prepositions: false,
+    conjunctions: false
+});
+// => "Fuglemen midlife frustratingly shtetl ferry."
 ```
