@@ -41,6 +41,7 @@ scrab.sentence();
 // => "Godliness outside excluding across; beyond before, among; beyond!"
 // => "Evocation, shrillness; rioters, Katy honeycombs?"
 // => "Krupp overclocking topdressings above."
+//  => "Unregulated installer thermoplastic wiggly lipreader?"
 
 // Get sentences with specific criteria.
 scrab.sentence({
