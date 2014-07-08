@@ -12,49 +12,49 @@ npm install --save scrab
 var scrab = require('scrab');
 
 console.log('My favorite word of all time is "' + scrab.word() + '".');
-// => My favorite word of all time is "abcoulombs".
+// => My favorite word of all time is "aristocrat".
 
 scrab.word({
     preposition: true
 });
-// => "between"
-// => "from"
+// => "off"
+// => "down"
 
 scrab.word({
     conjunction: true
 });
-// => "but"
-// => "nor"
+// => "so"
+// => "and"
 
 // Capitalize the first letter of random words.
 scrab.word({
-    properize: true
+    capitalize: true
 });
-// => "Orange"
+// => "Arsenal"
+
+// Get a bunch of random words.
+scrab.words();
+// => ["conveyable", "rattlings", "Marlowe", "indemnify"]
 
 // Get totally random sentences.
 scrab.sentence();
-// => "Unambivalently soapsudsy unisonant aduncous allotting axions deliciousness until agitates."
+// => "Godliness outside excluding across; beyond before, among; beyond!"
+// => "Evocation, shrillness; rioters, Katy honeycombs?"
+// => "Krupp overclocking topdressings above."
 
 // Get sentences with specific criteria.
 scrab.sentence({
     min: 2,
     max: 3,
-    punctuate: false,
-    properize: true
+    capitalize: true,
+    punctuate: false
 });
 // => "Pitifullest Vaudevillians Hansom"
 
-// Even include random grammar-things.
+// SCREAM!!!
 scrab.sentence({
-    separate: true
+    scream: true
 });
-// => "Though while prepurchases, verismos since: earlap; whimsied."
-
-// Or do away with logic completely.
-scrab.sentence({
-    prepositions: false,
-    conjunctions: false
-});
-// => "Fuglemen midlife frustratingly shtetl ferry."
+// => FLATT WINTER AFTER SO!!!
+// => EMBLEMATIC EXTERNALIZE TWISTY; POLYANDRY: TO OFF ABOARD!!!
 ```
