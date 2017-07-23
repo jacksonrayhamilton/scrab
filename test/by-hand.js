@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 'use strict';
 
 var scrab = require('../lib/scrab.js'),
