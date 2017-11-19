@@ -1,6 +1,6 @@
 {
   "name": "scrab",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A random word and sentence generation library.",
   "repository": {
     "type": "git",
