@@ -14,6 +14,6 @@
   "license": "MIT",
   "dependencies": {
     "lodash": "^2.4.1",
-    "wordlist-english": "^1.1.0"
+    "wordlist-english": "^1.2.0"
   }
 }

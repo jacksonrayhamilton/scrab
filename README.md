@@ -12,7 +12,7 @@ npm install --save scrab
 var scrab = require('scrab');
 
 console.log('My favorite word of all time is "' + scrab.word() + '".');
-// => My favorite word of all time is "aristocrat".
+// => My favorite word of all time is "interpretation".
 
 scrab.word({
     preposition: true
@@ -30,18 +30,17 @@ scrab.word({
 scrab.word({
     capitalize: true
 });
-// => "Arsenal"
+// => "Contact"
 
 // Get a bunch of random words.
 scrab.words();
-// => ["conveyable", "rattlings", "Marlowe", "indemnify"]
+// => ["secret", "senility", "bedside", "corrupting", "was", "indicates"]
 
 // Get totally random sentences.
 scrab.sentence();
-// => "Godliness outside excluding across; beyond before, among; beyond!"
-// => "Evocation, shrillness; rioters, Katy honeycombs?"
-// => "Krupp overclocking topdressings above."
-// => "Unregulated installer thermoplastic wiggly lipreader?"
+// => "Significance including budget; creates because where?"
+// => "Bed perform justify emergency!""
+// => "Lay: his; matter after while until.""
 
 // Get sentences with specific criteria.
 scrab.sentence({
@@ -50,12 +49,12 @@ scrab.sentence({
     capitalize: true,
     punctuate: false
 });
-// => "Pitifullest Vaudevillians Hansom"
+// => "Incline Supposedly Books"
 
 // SCREAM!!!
 scrab.sentence({
     scream: true
 });
-// => FLATT WINTER AFTER SO!!!
-// => EMBLEMATIC EXTERNALIZE TWISTY; POLYANDRY: TO OFF ABOARD!!!
+// => GRANTED DRUNKS; THEMSELVES DISCUSSES!!!
+// => REPRODUCE LIMITED PROGRESSIVE SAVES, CONCRETE DOPING!!!
 ```
